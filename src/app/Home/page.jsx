@@ -846,7 +846,7 @@ const Homepage = () => {
             </div>
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
-                <h1>Burgers</h1>
+                <h1>{`Burgers`}</h1>
                 <p>
                   Indulge in the juicy symphony of flavours Bite into Burger
                   Bliss
@@ -858,7 +858,7 @@ const Homepage = () => {
                   className={styles.linebutton}
                   id="moveButton"
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -877,7 +877,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -917,7 +917,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -938,7 +938,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -979,7 +979,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -1000,7 +1000,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -1042,7 +1042,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -1065,7 +1065,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -1109,7 +1109,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -1132,7 +1132,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -1167,8 +1167,8 @@ const Homepage = () => {
               <div className="text-center">
                 <h1>Milk Shakes</h1>
                 <p className="me-5">
-                  &nbsp;&nbsp;&nbsp;&nbsp; Sip, Savor, and Refresh: Crushes&
-                  Mojitos, the Cool Quenchers <br />
+                  Sip, Savor, and Refresh: Crushes & Mojitos, the Cool Quenchers{" "}
+                  <br />
                   for Any Occasin
                 </p>
                 <button
@@ -1176,7 +1176,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -1198,7 +1198,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
@@ -1242,7 +1242,7 @@ const Homepage = () => {
                   onClick={handleButtonClick}
                   className={styles.linebutton}
                 >
-                  &nbsp;View&nbsp;
+                  View
                 </button>
               </div>
             </div>
