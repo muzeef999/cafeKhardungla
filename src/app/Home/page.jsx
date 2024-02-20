@@ -3,14 +3,14 @@ import React, { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import Lenis from "@studio-freight/lenis";
 import "aos/dist/aos.css";
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/all";
 import gsap from "gsap";
 import styles from "./home.module.css";
 import { Typewriter } from "react-simple-typewriter";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Burgers from "../../asserts/Burgers.png";
 import sandwich from "../../asserts/sandwich.png";
 import french from "../../asserts/french.png";
@@ -23,15 +23,15 @@ import salads from "../../asserts/salads.png";
 import crushes from "../../asserts/crushes.png";
 import milkShakes from "../../asserts/milkshake.png";
 import iceCream from "../../asserts/icecream.png";
-import CrispyCombo from "../../asserts/Crispycombo.png";
-import coffe from "../../asserts/coffe.png";
+import CrispyCombo from "../../asserts/crispycombo.png";
+
 import Image from "next/image";
 import { Carousel, Col, Modal, Row, Button, Container } from "react-bootstrap";
 import Slider from "react-slick";
 import BurgersSlider from "../../asserts/Burgers-slider.png";
 import WafflesSlider from "../../asserts/waffles-slider.png";
 import MilkSlider from "../../asserts/Milk-shake.png";
-import logo from "../../asserts/cafe2.png"
+import logo from "../../asserts/cafe2.png";
 import data from "./data";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -39,15 +39,14 @@ import { useRouter } from "next/router";
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 const Homepage = () => {
-  const [show, setShow] = useState(false); 
+  const [show, setShow] = useState(false);
   const buttonRef = useRef(null);
-  const [store,setstore] = useState({})
+  const [store, setstore] = useState({});
 
-  var storedata = {} ;
+  var storedata = {};
 
-const [value,setvalue]=useState(false)
+  const [value, setvalue] = useState(false);
   // lenis start **************************************
-
 
   // useEffect(() => {
   //   // Initialize Lenis instance
@@ -73,46 +72,38 @@ const [value,setvalue]=useState(false)
   //   };
   // }, []);
 
-    // useEffect(()=>{
-    //   const lenis = new Lenis();
-      
-    //   function raf(time) {
-    //     lenis.raf(time);
-    //     requestAnimationFrame(raf);
-    //   }
-    
-    //   raf()
-    
-    //   return () => {
-    //     lenis.destroy()
-    //   }
-    // }, [])
+  // useEffect(()=>{
+  //   const lenis = new Lenis();
 
-    // const lenisRef = useRef()
+  //   function raf(time) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
 
-    // useEffect(() => {
-    //   function update(time) {
-    //     lenisRef.current?.lenis?.raf(time * 1000)
-    //   }
-    
-    //   gsap.ticker.add(update)
-    
-    //   return () => {
-    //     gsap.ticker.remove(update)
-    //   }
-    // })
-    
+  //   raf()
 
+  //   return () => {
+  //     lenis.destroy()
+  //   }
+  // }, [])
 
+  // const lenisRef = useRef()
 
+  // useEffect(() => {
+  //   function update(time) {
+  //     lenisRef.current?.lenis?.raf(time * 1000)
+  //   }
 
+  //   gsap.ticker.add(update)
+
+  //   return () => {
+  //     gsap.ticker.remove(update)
+  //   }
+  // })
 
   // lenis ends  *************************************
 
-
-
   // react slick carosual ****************************
-
 
   const settings = {
     dots: true,
@@ -125,49 +116,47 @@ const [value,setvalue]=useState(false)
     autoplaySpeed: 1700,
   };
 
-
-
-
   // react slick carosual end ************************
 
   // const [showModal, setShowModal] = useState(false);
 
   const handleClose = () => setShow(false);
   useEffect(() => {
-    AOS.init({
-      
-    });
+    AOS.init({});
   }, []);
 
-  useEffect(()=>{
-    console.log(store[0] && store[0].heading)
-  },[storedata])
+  useEffect(() => {
+    console.log(store[0] && store[0].heading);
+  }, [storedata]);
 
   const handleButtonClick = (event, id) => {
-  console.log(event)
-  const buttonRect = event.target.getBoundingClientRect();
+    console.log(event);
+    const buttonRect = event.target.getBoundingClientRect();
     const buttonLocation = {
       x: buttonRect.left + window.scrollX,
-      y: buttonRect.top + window.scrollY
+      y: buttonRect.top + window.scrollY,
     };
-    console.log('Button clicked at coordinates (X: ' + buttonLocation.x + ', Y: ' + buttonLocation.y + ')');
+    console.log(
+      "Button clicked at coordinates (X: " +
+        buttonLocation.x +
+        ", Y: " +
+        buttonLocation.y +
+        ")"
+    );
 
-setShow(true)
+    setShow(true);
     const value = event.currentTarget.getAttribute("data-value");
-   
 
-    const filteredData = data.filter(item => item.id === value);
-        
-     storedata = filteredData;
-    
-     setstore(filteredData)
+    const filteredData = data.filter((item) => item.id === value);
+
+    storedata = filteredData;
+
+    setstore(filteredData);
     gsap.to("#rect", {
       duration: 1,
-      rotation: 360, 
-      ease: "none", 
-
+      rotation: 360,
+      ease: "none",
     });
-
   };
 
   useEffect(() => {
@@ -176,12 +165,11 @@ setShow(true)
         trigger: "#path",
         start: "top 10%",
         end: "bottom center",
-        scrub:1.3,
+        scrub: 1.3,
         toggleActions: "play reverse none none",
         onLeave: () => {
-         console.log("scroll on revers")
-      }
-      
+          console.log("scroll on revers");
+        },
       },
       ease: "none",
       motionPath: {
@@ -189,13 +177,11 @@ setShow(true)
         align: "#path",
         autoRotate: true,
         start: 0.05,
-        
+
         alignOrigin: [0.5, 0.5],
       },
     });
-    
-
-  },[]);
+  }, []);
   useEffect(() => {
     // Create a GSAP timeline
     const timeline = gsap.timeline({
@@ -203,16 +189,16 @@ setShow(true)
         trigger: ".box-contain",
         start: "70% 78%",
         end: "bottom bottom",
-        scrub:2,
-       
+        scrub: 2,
+
         onEnterBack: handleScrollStart, // call handleScrollStart when scrolling back
         onEnter: handleScrollEnd, // call handleScrollEnd when scrolling forward
-      }
+      },
     });
 
     // Add animations to the timeline
-    timeline.to("#cap", { y:200, opacity:1 });
-    timeline.to("#light", {opacity:0 });
+    timeline.to("#cap", { y: 200, opacity: 1 });
+    timeline.to("#light", { opacity: 0 });
 
     // Clean up function
     return () => {
@@ -223,7 +209,7 @@ setShow(true)
 
   // Define handleScrollEnd function
   const handleScrollEnd = () => {
-    var a =  document.querySelector("#OBJECTS");
+    var a = document.querySelector("#OBJECTS");
     // Perform actions on completion of the animation
     // For example, add a class to the selected element
     if (a) {
@@ -234,188 +220,185 @@ setShow(true)
 
   // Define handleScrollStart function
   const handleScrollStart = () => {
-    var a =  document.querySelector("#OBJECTS");
+    var a = document.querySelector("#OBJECTS");
     // Remove the added class to return to initial position
     if (a) {
       a.classList.remove("rotate-data");
-         
     }
   };
 
   const [reverseScrollCount, setReverseScrollCount] = useState(0);
 
-  console.log(reverseScrollCount)
+  console.log(reverseScrollCount);
 
-// test testimonial start *********************************
-// useEffect(() => {
-//   let lastScrollTop = 0;
+  // test testimonial start *********************************
+  // useEffect(() => {
+  //   let lastScrollTop = 0;
 
-//   // const handleScroll = () => {
-//   //   const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  //   // const handleScroll = () => {
+  //   //   const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-//   //   if (currentScrollTop > lastScrollTop) {
-//   //     console.log("scroll down");
-//   //   } else {
-//   //     gsap.to("#rect", {
-//   //       duration: 1,
-//   //       // rotation: "-90",
-//   //       ease: "none",
-//   //       // alignOrigin: [0.5, 0.5],
-//   //       path: "#path",
-//   //       align: "#path",
-//   //       autoRotate: true,
-//   //     });
-//   //   }
+  //   //   if (currentScrollTop > lastScrollTop) {
+  //   //     console.log("scroll down");
+  //   //   } else {
+  //   //     gsap.to("#rect", {
+  //   //       duration: 1,
+  //   //       // rotation: "-90",
+  //   //       ease: "none",
+  //   //       // alignOrigin: [0.5, 0.5],
+  //   //       path: "#path",
+  //   //       align: "#path",
+  //   //       autoRotate: true,
+  //   //     });
+  //   //   }
 
-//   //   lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
-//   // };
+  //   //   lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+  //   // };
 
-//   // window.addEventListener('wheel', handleScroll);
+  //   // window.addEventListener('wheel', handleScroll);
 
-//   return () => {
-//     window.removeEventListener('wheel', handleScroll);
-//   };
-// }, []);
+  //   return () => {
+  //     window.removeEventListener('wheel', handleScroll);
+  //   };
+  // }, []);
 
-// test testimonial end ************************************
+  // test testimonial end ************************************
 
+  const audioRef = useRef(null);
 
+  useEffect(() => {
+    setvalue(true);
+    console.log(value);
+  });
 
+  // auto play code
 
-const audioRef = useRef(null);
+  useEffect(() => {
+    // Function to be called when the page loads
+    const onPageLoad = () => {
+      console.log("page load succsucc");
+    };
 
-useEffect(()=>{
-  setvalue(true)
-  console.log(value)
-})
+    // Call onPageLoad when the component mounts
+    onPageLoad();
 
-// auto play code
+    // Add click event listener to the audio element
+    const handleAudioClick = () => {
+      console.log("Audio clicked");
+    };
 
-useEffect(() => {
-  // Function to be called when the page loads
-  const onPageLoad = () => {
-    console.log("page load succsucc");
-  };
-
-  // Call onPageLoad when the component mounts
-  onPageLoad();
-
-  // Add click event listener to the audio element
-  const handleAudioClick = () => {
-    console.log("Audio clicked");
-  };
-
-  if (audioRef.current) {
-    audioRef.current.addEventListener('click', handleAudioClick);
-  }
-
-  // Cleanup
-  return () => {
     if (audioRef.current) {
-      audioRef.current.removeEventListener('click', handleAudioClick);
+      audioRef.current.addEventListener("click", handleAudioClick);
     }
-  };
-}, []);
 
+    // Cleanup
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.removeEventListener("click", handleAudioClick);
+      }
+    };
+  }, []);
 
-// autoplay codeend
+  // autoplay codeend
 
+  // useEffect(() => {
+  //   const handleScrollStart = () => {
+  //     if (audioRef.current) {
+  //       audioRef.current.play();
+  //     }
+  //     console.log("Scrolling started");
+  //   };
 
+  //   const handleScrollStop = () => {
+  //     console.log("Scrolling stopped");
+  //   };
 
-// useEffect(() => {
-//   const handleScrollStart = () => {
-//     if (audioRef.current) {
-//       audioRef.current.play();
-//     }
-//     console.log("Scrolling started");
-//   };
+  //   gsap.to(audioRef.current, {
+  //     scrollTrigger: {
+  //       trigger: audioRef.current,
+  //       start: '20% 15%', // Adjust as needed
+  //       end: 'bottom 15%', // Adjust as needed
+  //       onUpdate: (self) => {
+  //         if (self.isDragging || self.isScrolling) {
+  //           // Scroll is in progress
+  //           handleScrollStart();
+  //         } else {
+  //           // Scroll has stopped
+  //           handleScrollStop();
+  //         }
+  //       }
+  //     }
+  //   });
+  // }, []);
 
-//   const handleScrollStop = () => {
-//     console.log("Scrolling stopped");
-//   };
+  useEffect(() => {
+    let timeout;
 
-//   gsap.to(audioRef.current, {
-//     scrollTrigger: {
-//       trigger: audioRef.current,
-//       start: '20% 15%', // Adjust as needed
-//       end: 'bottom 15%', // Adjust as needed
-//       onUpdate: (self) => {
-//         if (self.isDragging || self.isScrolling) {
-//           // Scroll is in progress
-//           handleScrollStart();
-//         } else {
-//           // Scroll has stopped
-//           handleScrollStop();
-//         }
-//       }
-//     }
-//   });
-// }, []);
+    const handleScrollStart = () => {
+      if (audioRef.current) {
+        audioRef.current.play();
+      }
+    };
 
-useEffect(() => {
-  let timeout;
+    const handleScrollStop = () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+      // console.log("Scrolling stopped");
+    };
+    const handleScroll = () => {
+      clearTimeout(timeout);
+      handleScrollStart();
 
-  const handleScrollStart = () => {
-    if (audioRef.current) {
-      audioRef.current.play();
-    }
-  };
+      timeout = setTimeout(() => {
+        handleScrollStop();
+      }, 420); // Adjust the timeout duration as needed
+    };
 
-  const handleScrollStop = () => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-     
-    }
-    // console.log("Scrolling stopped");
-  
-  };
-  const handleScroll = () => {
-    clearTimeout(timeout);
-    handleScrollStart();
+    window.addEventListener("scroll", handleScroll);
 
-    timeout = setTimeout(() => {
-      handleScrollStop();
-    },420); // Adjust the timeout duration as needed
-  };
-
-  window.addEventListener('scroll', handleScroll);
-
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-  
     <div className="rel">
-      	<Head>
-			<link rel='icon' href="/favicon.ico" />
-		</Head>
-   
-    <audio ref={audioRef} loop controls={true} className="audiodata" autoPlay >
-  <source src="music.mp3" type="audio/mpeg" />
-  Your browser does not support the audio element.
-</audio>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-     <Modal
+      <audio ref={audioRef} loop controls={true} className="audiodata" autoPlay>
+        <source src="music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <Modal
         show={show}
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title> <h4>{store[0] && store[0].heading}</h4></Modal.Title>
+          <Modal.Title>
+            {" "}
+            <h4>{store[0] && store[0].heading}</h4>
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-     <div className="d-flex">
-      <div>
-           <img src="https://img.freepik.com/free-vector/chef-character-design_1322-128.jpg?w=826&t=st=1707728072~exp=1707728672~hmac=48021a7818180ab20e03773d9120caedfe5fdbab81711ef71893f7ccff6539dd" alt="" className="w-75"/>
-      </div>
-      <div>
-        <p>{store[0] && store[0].Description}</p>
-        <h5>{store[0] && store[0].Conclusiondata}</h5>
-      </div>
-     </div>
+          <div className="d-flex">
+            <div>
+              <img
+                src="https://img.freepik.com/free-vector/chef-character-design_1322-128.jpg?w=826&t=st=1707728072~exp=1707728672~hmac=48021a7818180ab20e03773d9120caedfe5fdbab81711ef71893f7ccff6539dd"
+                alt=""
+                className="w-75"
+              />
+            </div>
+            <div>
+              <p>{store[0] && store[0].Description}</p>
+              <h5>{store[0] && store[0].Conclusiondata}</h5>
+            </div>
+          </div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
@@ -424,58 +407,58 @@ useEffect(() => {
         </Modal.Footer>
       </Modal>
       <Row className="hero-banner">
-      <Col md={6}>
-      <div className="hero-content ms-5">
-        <h1 id="heading">
-          The taste of <span>
-            <TypeAnimation
-              preRenderFirstString={true}
-              sequence={[
-                1300,
-                ' Burger', // initially rendered starting point
-                1300,
-                'Pizza',
-                1300,
-                'Waffle',
-                1400,
-                'Drink',
-                1300,
-              ]}
-              speed={60}
-              style={{ fontSize: "77px" }}
-              repeat={Infinity}
-            />
-          </span>
-        </h1>
-        <h1>that will give you</h1>
-        <h2>
-          Unforgettable<span> feels</span>
-        </h2>
-      </div>
-    </Col>
-   <Col md={6} >
-      <Slider {...settings}>
-        <div>
-          <Image src={WafflesSlider} alt="" className={styles.slider} />
-        </div>
-        <div>
-          <Image src={MilkSlider} alt="" className={styles.slider} />
-        </div>
-        <div>
-          <Image src={BurgersSlider} alt="" className={styles.slider} />
-        </div>
-        <div>
-          <Image src={MilkSlider} alt="" className={styles.slider} />
-        </div>
-      </Slider>
-    </Col>
+        <Col md={6}>
+          <div className="hero-content ms-5">
+            <h1 id="heading">
+              The taste of{" "}
+              <span>
+                <TypeAnimation
+                  preRenderFirstString={true}
+                  sequence={[
+                    1300,
+                    " Burger", // initially rendered starting point
+                    1300,
+                    "Pizza",
+                    1300,
+                    "Waffle",
+                    1400,
+                    "Drink",
+                    1300,
+                  ]}
+                  speed={60}
+                  style={{ fontSize: "77px" }}
+                  repeat={Infinity}
+                />
+              </span>
+            </h1>
+            <h1>that will give you</h1>
+            <h2>
+              Unforgettable<span> feels</span>
+            </h2>
+          </div>
+        </Col>
+        <Col md={6}>
+          <Slider {...settings}>
+            <div>
+              <Image src={WafflesSlider} alt="" className={styles.slider} />
+            </div>
+            <div>
+              <Image src={MilkSlider} alt="" className={styles.slider} />
+            </div>
+            <div>
+              <Image src={BurgersSlider} alt="" className={styles.slider} />
+            </div>
+            <div>
+              <Image src={MilkSlider} alt="" className={styles.slider} />
+            </div>
+          </Slider>
+        </Col>
       </Row>
 
+      <div className="allproduct">
+        <h1 className="text-center">All Products</h1>
+      </div>
 
-<div className="allproduct">
-  <h1 className="text-center">All Products</h1>
-</div>
-      
       <div className="main_background">
         <div className="justify-content-center align-items-center">
           <center>
@@ -617,71 +600,240 @@ useEffect(() => {
             </svg>
           </center>
           <center>
-  <div className="box-contain">
-  <svg width="45%" height="auto" viewBox="0 0 733 658" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginTop:"-430px"}}>
-<g id="OBJECTS">
-<g id="bottom">
-<path id="Vector" d="M343.241 364.934L160.988 399.07V623.845L343.241 589.709V364.934Z" fill="#B0B0B0"/>
-<path id="Vector_2" d="M524.992 399.07L342.739 364.934V589.709L524.992 623.845V399.07Z" fill="#B7B7B7"/>
-<path id="Vector_3" d="M342.99 658.002L160.737 623.866V399.112L342.99 433.227V658.002Z" fill="#F9F9F9"/>
-<path id="Vector_4" d="M524.741 623.866L342.489 658.002V433.227L524.741 399.112V623.866Z" fill="#CECECE"/>
-<path id="Vector_5" d="M267.499 643.847L217.805 634.556V409.78L267.499 419.092V643.847Z" fill="#DE4F68"/>
-<path id="Vector_6" d="M464.227 635.182L414.533 644.536V419.739L464.227 410.427V635.182Z" fill="#9E2B46"/>
-</g>
-<g id="light">
-<path id="Vector_7" d="M160.194 401.006L0 50H733L524.198 401.006L341.945 435.121L160.194 401.006Z" fill="url(#paint0_linear_266_38)"/>
-<path id="Vector_8" d="M192.237 407.248L61.3914 120.569H660.099L489.565 407.248L340.692 435.121L192.237 407.248Z" fill="url(#paint1_linear_266_38)"/>
-<path id="Vector_9" d="M235.393 415.224L141.979 210.533H569.443L447.683 415.224L341.402 435.121L235.393 415.224Z" fill="url(#paint2_linear_266_38)"/>
-</g>
-<g id="cap">
-<path id="Vector_10" d="M153.017 166.254L148.84 219.878L345.332 259.928L343.404 200.825L153.017 166.254Z" fill="#FCFCFC"/>
-<path id="Vector_11" d="M536.851 160.281L539.146 214.814L345.333 259.928L343.404 200.825L536.851 160.281Z" fill="#DDDDDD"/>
-<path id="Vector_12" d="M153.017 166.254L343.404 200.825L536.851 160.281L340.485 130.265L153.017 166.254Z" fill="#E5E5E5"/>
-<path id="Vector_13" d="M220.014 178.539L418.765 141.196L465.635 149.398L281.202 189.651L220.014 178.539Z" fill="#B2354E"/>
-<path id="Vector_14" d="M220.014 178.539L213.243 233.003L273.473 245.272L281.202 189.651" fill="#DE4F68"/>
-<path id="Vector_15" d="M274.53 143.214L224.192 152.584L399.708 188.357L463.535 175.662L274.53 143.214Z" fill="#B2354E"/>
-<path id="Vector_16" d="M538.224 110.725C523.556 126.611 446.377 183.725 366.728 172.649C366.728 172.649 485.909 77.2413 537.095 104.194C537.654 104.502 538.135 104.931 538.504 105.449C538.873 105.967 539.121 106.56 539.229 107.187C539.338 107.813 539.303 108.456 539.13 109.068C538.956 109.68 538.646 110.246 538.224 110.725Z" fill="#9E2B46"/>
-<path id="Vector_17" d="M348.623 127.584L341.693 168.453L366.728 172.649C366.728 172.649 493.928 77.6318 538.303 105.241L479.657 26.0231C477.968 23.7966 475.635 22.1378 472.968 21.2684C470.301 20.3991 467.429 20.3606 464.734 21.158C442.647 27.7707 386.887 49.5896 355.495 107.878C352.16 114.042 349.839 120.695 348.623 127.584Z" fill="#E55A77"/>
-<path id="Vector_18" d="M150.802 79.9101C162.631 97.9743 232.908 166.846 313.352 168.855C313.352 168.855 207.948 55.3673 152.914 73.6456C152.32 73.8706 151.783 74.2241 151.342 74.6805C150.901 75.1368 150.568 75.6846 150.365 76.2842C150.163 76.8838 150.097 77.5202 150.173 78.1473C150.248 78.7744 150.463 79.3765 150.802 79.9101Z" fill="#9E2B46"/>
-<path id="Vector_19" d="M335.089 127.132L335.16 168.815L313.352 168.855C313.352 168.855 200.001 54.4951 151.656 74.4191L222.651 5.74468C224.696 3.82266 227.281 2.56736 230.06 2.14752C232.839 1.72768 235.677 2.16344 238.194 3.39622C259.201 13.6577 311.891 45.0376 332.569 109.557C334.311 115.249 335.16 121.177 335.089 127.132Z" fill="#E55A77"/>
-<path id="Vector_20" d="M479.676 25.8419C479.676 25.8419 437.96 120.126 366.728 172.649L343.94 160.347L471.798 20.7877C471.798 20.7877 475.565 20.2761 479.676 25.8419Z" fill="#DE4F68"/>
-<path id="Vector_21" d="M221.622 6.63363C221.622 6.63363 250.374 105.367 313.972 166.422L338.22 157.079L230.107 2.58299C230.107 2.58299 226.442 1.63577 221.622 6.63363Z" fill="#DE4F68"/>
-<path id="Vector_22" d="M399.708 188.357L402.499 246.615L466.249 231.781L463.535 175.662L399.708 188.357Z" fill="#9E2B46"/>
-<path id="Vector_23" d="M482.944 10.6143C467.388 41.6709 399.787 145.731 355.208 156.42C355.208 156.42 424.07 26.3613 480.179 5.02292C483.578 3.70543 484.978 6.48534 482.944 10.6143Z" fill="#9E2B46"/>
-<path id="Vector_24" d="M349.22 127.492L345.235 158.286L355.125 156.441C355.125 156.441 430.659 20.5874 481.767 4.82317L415.924 -7.04019C413.253 -7.41328 409.243 -4.21578 405.77 0.932277C392.924 20.0152 366.046 63.0103 352.349 111.992C350.937 117.08 349.891 122.259 349.22 127.492Z" fill="#DE4F68"/>
-<path id="Vector_25" d="M362.629 118.416C366.104 105.314 376.478 81.9949 376.478 81.9949C371.352 87.0956 359.49 113.254 359.49 113.254C355.906 98.7811 367.954 69.0488 367.954 69.0488C357.566 90.8077 349.276 122.256 349.276 122.256L358.143 124.846L361.601 125.848L365.511 126.884C364.552 121.41 375.594 97.5173 375.594 97.5173C375.594 97.5173 368.117 103.703 362.629 118.416Z" fill="url(#paint3_linear_266_38)"/>
-<path id="Vector_26" d="M227.393 -5.3347C237.604 27.741 287.14 141.091 329.476 158.643C329.476 158.643 282.982 19.4846 231.131 -10.3989C227.891 -12.2518 226.062 -9.69703 227.393 -5.3347Z" fill="#9E2B46"/>
-<path id="Vector_27" d="M340.057 130.995L338.909 162.03L329.476 158.643C329.476 158.643 277.355 12.7117 229.499 -10.8704L296.45 -12.2537C299.122 -12.2114 302.567 -8.40811 305.14 -2.78806C314.669 18.0654 334.082 64.7231 339.494 115.282C340.06 120.498 340.249 125.749 340.057 130.995Z" fill="#DE4F68"/>
-<path id="Vector_28" d="M323.106 127.767C323.106 127.767 306.407 71.7561 297.595 55.5378C297.595 55.5378 320.245 92.6375 327.409 113.94L321.063 89.359C321.063 89.359 339.226 113.767 336.238 121.585C333.25 129.402 323.106 127.767 323.106 127.767Z" fill="url(#paint4_linear_266_38)"/>
-<path id="Vector_29" d="M315.293 169.906L307.851 150.99C306.721 148.104 306.347 144.978 306.763 141.905C307.18 138.831 308.374 135.91 310.233 133.415C312.092 130.921 314.555 128.934 317.393 127.641C320.231 126.348 323.35 125.791 326.458 126.022L361.177 128.603C364.302 128.838 367.312 129.862 369.924 131.578C372.535 133.294 374.661 135.645 376.1 138.409C377.539 141.174 378.244 144.26 378.149 147.376C378.053 150.491 377.16 153.534 375.553 156.216L365.674 172.685L315.293 169.906Z" fill="#B2354E"/>
-<path id="Vector_30" d="M327.182 170.595C327.182 170.595 312.421 161.898 311.755 147.138C311.755 147.138 323.76 170.398 335.66 171.04C335.66 171.04 321.643 150.823 328.215 140.295C328.215 140.295 335.982 162.033 340.662 165.642C340.662 165.642 349.975 162.959 353.736 156.39C353.736 156.39 356.012 162.397 351.936 165.678C351.936 165.678 365.032 165.982 370.944 150.694C370.944 150.694 371.774 163.053 354.113 172.152L327.182 170.595Z" fill="#9E2B46"/>
-</g>
-</g>
-<defs>
-<linearGradient id="paint0_linear_266_38" x1="366.49" y1="467.023" x2="366.49" y2="81.902" gradientUnits="userSpaceOnUse">
-<stop stopColor="#FFF9DE" stopOpacity="0.6"/>
-<stop offset="0.96" stopColor="#FFF9DE" stopOpacity="0"/>
-</linearGradient>
-<linearGradient id="paint1_linear_266_38" x1="360.745" y1="461.177" x2="360.745" y2="146.604" gradientUnits="userSpaceOnUse">
-<stop stopColor="#FFF9DE" stopOpacity="0.6"/>
-<stop offset="0.96" stopColor="#FFF9DE" stopOpacity="0"/>
-</linearGradient>
-<linearGradient id="paint2_linear_266_38" x1="355.711" y1="453.723" x2="355.711" y2="229.136" gradientUnits="userSpaceOnUse">
-<stop stopColor="#FFF9DE" stopOpacity="0.6"/>
-<stop offset="0.96" stopColor="#FFF9DE" stopOpacity="0"/>
-</linearGradient>
-<linearGradient id="paint3_linear_266_38" x1="375.788" y1="65.837" x2="357.127" y2="127.94" gradientUnits="userSpaceOnUse">
-<stop offset="0.09" stopColor="#B2354E" stopOpacity="0.86"/>
-<stop offset="1" stopColor="#B2354E" stopOpacity="0"/>
-</linearGradient>
-<linearGradient id="paint4_linear_266_38" x1="300.5" y1="49.2044" x2="328.518" y2="119.352" gradientUnits="userSpaceOnUse">
-<stop offset="0.09" stopColor="#B2354E" stopOpacity="0.86"/>
-<stop offset="1" stopColor="#B2354E" stopOpacity="0"/>
-</linearGradient>
-</defs>
-</svg>
-
-  </div>
+            <div className="box-contain">
+              <svg
+                width="45%"
+                height="auto"
+                viewBox="0 0 733 658"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ marginTop: "-430px" }}
+              >
+                <g id="OBJECTS">
+                  <g id="bottom">
+                    <path
+                      id="Vector"
+                      d="M343.241 364.934L160.988 399.07V623.845L343.241 589.709V364.934Z"
+                      fill="#B0B0B0"
+                    />
+                    <path
+                      id="Vector_2"
+                      d="M524.992 399.07L342.739 364.934V589.709L524.992 623.845V399.07Z"
+                      fill="#B7B7B7"
+                    />
+                    <path
+                      id="Vector_3"
+                      d="M342.99 658.002L160.737 623.866V399.112L342.99 433.227V658.002Z"
+                      fill="#F9F9F9"
+                    />
+                    <path
+                      id="Vector_4"
+                      d="M524.741 623.866L342.489 658.002V433.227L524.741 399.112V623.866Z"
+                      fill="#CECECE"
+                    />
+                    <path
+                      id="Vector_5"
+                      d="M267.499 643.847L217.805 634.556V409.78L267.499 419.092V643.847Z"
+                      fill="#DE4F68"
+                    />
+                    <path
+                      id="Vector_6"
+                      d="M464.227 635.182L414.533 644.536V419.739L464.227 410.427V635.182Z"
+                      fill="#9E2B46"
+                    />
+                  </g>
+                  <g id="light">
+                    <path
+                      id="Vector_7"
+                      d="M160.194 401.006L0 50H733L524.198 401.006L341.945 435.121L160.194 401.006Z"
+                      fill="url(#paint0_linear_266_38)"
+                    />
+                    <path
+                      id="Vector_8"
+                      d="M192.237 407.248L61.3914 120.569H660.099L489.565 407.248L340.692 435.121L192.237 407.248Z"
+                      fill="url(#paint1_linear_266_38)"
+                    />
+                    <path
+                      id="Vector_9"
+                      d="M235.393 415.224L141.979 210.533H569.443L447.683 415.224L341.402 435.121L235.393 415.224Z"
+                      fill="url(#paint2_linear_266_38)"
+                    />
+                  </g>
+                  <g id="cap">
+                    <path
+                      id="Vector_10"
+                      d="M153.017 166.254L148.84 219.878L345.332 259.928L343.404 200.825L153.017 166.254Z"
+                      fill="#FCFCFC"
+                    />
+                    <path
+                      id="Vector_11"
+                      d="M536.851 160.281L539.146 214.814L345.333 259.928L343.404 200.825L536.851 160.281Z"
+                      fill="#DDDDDD"
+                    />
+                    <path
+                      id="Vector_12"
+                      d="M153.017 166.254L343.404 200.825L536.851 160.281L340.485 130.265L153.017 166.254Z"
+                      fill="#E5E5E5"
+                    />
+                    <path
+                      id="Vector_13"
+                      d="M220.014 178.539L418.765 141.196L465.635 149.398L281.202 189.651L220.014 178.539Z"
+                      fill="#B2354E"
+                    />
+                    <path
+                      id="Vector_14"
+                      d="M220.014 178.539L213.243 233.003L273.473 245.272L281.202 189.651"
+                      fill="#DE4F68"
+                    />
+                    <path
+                      id="Vector_15"
+                      d="M274.53 143.214L224.192 152.584L399.708 188.357L463.535 175.662L274.53 143.214Z"
+                      fill="#B2354E"
+                    />
+                    <path
+                      id="Vector_16"
+                      d="M538.224 110.725C523.556 126.611 446.377 183.725 366.728 172.649C366.728 172.649 485.909 77.2413 537.095 104.194C537.654 104.502 538.135 104.931 538.504 105.449C538.873 105.967 539.121 106.56 539.229 107.187C539.338 107.813 539.303 108.456 539.13 109.068C538.956 109.68 538.646 110.246 538.224 110.725Z"
+                      fill="#9E2B46"
+                    />
+                    <path
+                      id="Vector_17"
+                      d="M348.623 127.584L341.693 168.453L366.728 172.649C366.728 172.649 493.928 77.6318 538.303 105.241L479.657 26.0231C477.968 23.7966 475.635 22.1378 472.968 21.2684C470.301 20.3991 467.429 20.3606 464.734 21.158C442.647 27.7707 386.887 49.5896 355.495 107.878C352.16 114.042 349.839 120.695 348.623 127.584Z"
+                      fill="#E55A77"
+                    />
+                    <path
+                      id="Vector_18"
+                      d="M150.802 79.9101C162.631 97.9743 232.908 166.846 313.352 168.855C313.352 168.855 207.948 55.3673 152.914 73.6456C152.32 73.8706 151.783 74.2241 151.342 74.6805C150.901 75.1368 150.568 75.6846 150.365 76.2842C150.163 76.8838 150.097 77.5202 150.173 78.1473C150.248 78.7744 150.463 79.3765 150.802 79.9101Z"
+                      fill="#9E2B46"
+                    />
+                    <path
+                      id="Vector_19"
+                      d="M335.089 127.132L335.16 168.815L313.352 168.855C313.352 168.855 200.001 54.4951 151.656 74.4191L222.651 5.74468C224.696 3.82266 227.281 2.56736 230.06 2.14752C232.839 1.72768 235.677 2.16344 238.194 3.39622C259.201 13.6577 311.891 45.0376 332.569 109.557C334.311 115.249 335.16 121.177 335.089 127.132Z"
+                      fill="#E55A77"
+                    />
+                    <path
+                      id="Vector_20"
+                      d="M479.676 25.8419C479.676 25.8419 437.96 120.126 366.728 172.649L343.94 160.347L471.798 20.7877C471.798 20.7877 475.565 20.2761 479.676 25.8419Z"
+                      fill="#DE4F68"
+                    />
+                    <path
+                      id="Vector_21"
+                      d="M221.622 6.63363C221.622 6.63363 250.374 105.367 313.972 166.422L338.22 157.079L230.107 2.58299C230.107 2.58299 226.442 1.63577 221.622 6.63363Z"
+                      fill="#DE4F68"
+                    />
+                    <path
+                      id="Vector_22"
+                      d="M399.708 188.357L402.499 246.615L466.249 231.781L463.535 175.662L399.708 188.357Z"
+                      fill="#9E2B46"
+                    />
+                    <path
+                      id="Vector_23"
+                      d="M482.944 10.6143C467.388 41.6709 399.787 145.731 355.208 156.42C355.208 156.42 424.07 26.3613 480.179 5.02292C483.578 3.70543 484.978 6.48534 482.944 10.6143Z"
+                      fill="#9E2B46"
+                    />
+                    <path
+                      id="Vector_24"
+                      d="M349.22 127.492L345.235 158.286L355.125 156.441C355.125 156.441 430.659 20.5874 481.767 4.82317L415.924 -7.04019C413.253 -7.41328 409.243 -4.21578 405.77 0.932277C392.924 20.0152 366.046 63.0103 352.349 111.992C350.937 117.08 349.891 122.259 349.22 127.492Z"
+                      fill="#DE4F68"
+                    />
+                    <path
+                      id="Vector_25"
+                      d="M362.629 118.416C366.104 105.314 376.478 81.9949 376.478 81.9949C371.352 87.0956 359.49 113.254 359.49 113.254C355.906 98.7811 367.954 69.0488 367.954 69.0488C357.566 90.8077 349.276 122.256 349.276 122.256L358.143 124.846L361.601 125.848L365.511 126.884C364.552 121.41 375.594 97.5173 375.594 97.5173C375.594 97.5173 368.117 103.703 362.629 118.416Z"
+                      fill="url(#paint3_linear_266_38)"
+                    />
+                    <path
+                      id="Vector_26"
+                      d="M227.393 -5.3347C237.604 27.741 287.14 141.091 329.476 158.643C329.476 158.643 282.982 19.4846 231.131 -10.3989C227.891 -12.2518 226.062 -9.69703 227.393 -5.3347Z"
+                      fill="#9E2B46"
+                    />
+                    <path
+                      id="Vector_27"
+                      d="M340.057 130.995L338.909 162.03L329.476 158.643C329.476 158.643 277.355 12.7117 229.499 -10.8704L296.45 -12.2537C299.122 -12.2114 302.567 -8.40811 305.14 -2.78806C314.669 18.0654 334.082 64.7231 339.494 115.282C340.06 120.498 340.249 125.749 340.057 130.995Z"
+                      fill="#DE4F68"
+                    />
+                    <path
+                      id="Vector_28"
+                      d="M323.106 127.767C323.106 127.767 306.407 71.7561 297.595 55.5378C297.595 55.5378 320.245 92.6375 327.409 113.94L321.063 89.359C321.063 89.359 339.226 113.767 336.238 121.585C333.25 129.402 323.106 127.767 323.106 127.767Z"
+                      fill="url(#paint4_linear_266_38)"
+                    />
+                    <path
+                      id="Vector_29"
+                      d="M315.293 169.906L307.851 150.99C306.721 148.104 306.347 144.978 306.763 141.905C307.18 138.831 308.374 135.91 310.233 133.415C312.092 130.921 314.555 128.934 317.393 127.641C320.231 126.348 323.35 125.791 326.458 126.022L361.177 128.603C364.302 128.838 367.312 129.862 369.924 131.578C372.535 133.294 374.661 135.645 376.1 138.409C377.539 141.174 378.244 144.26 378.149 147.376C378.053 150.491 377.16 153.534 375.553 156.216L365.674 172.685L315.293 169.906Z"
+                      fill="#B2354E"
+                    />
+                    <path
+                      id="Vector_30"
+                      d="M327.182 170.595C327.182 170.595 312.421 161.898 311.755 147.138C311.755 147.138 323.76 170.398 335.66 171.04C335.66 171.04 321.643 150.823 328.215 140.295C328.215 140.295 335.982 162.033 340.662 165.642C340.662 165.642 349.975 162.959 353.736 156.39C353.736 156.39 356.012 162.397 351.936 165.678C351.936 165.678 365.032 165.982 370.944 150.694C370.944 150.694 371.774 163.053 354.113 172.152L327.182 170.595Z"
+                      fill="#9E2B46"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_266_38"
+                    x1="366.49"
+                    y1="467.023"
+                    x2="366.49"
+                    y2="81.902"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#FFF9DE" stopOpacity="0.6" />
+                    <stop offset="0.96" stopColor="#FFF9DE" stopOpacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_266_38"
+                    x1="360.745"
+                    y1="461.177"
+                    x2="360.745"
+                    y2="146.604"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#FFF9DE" stopOpacity="0.6" />
+                    <stop offset="0.96" stopColor="#FFF9DE" stopOpacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint2_linear_266_38"
+                    x1="355.711"
+                    y1="453.723"
+                    x2="355.711"
+                    y2="229.136"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#FFF9DE" stopOpacity="0.6" />
+                    <stop offset="0.96" stopColor="#FFF9DE" stopOpacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint3_linear_266_38"
+                    x1="375.788"
+                    y1="65.837"
+                    x2="357.127"
+                    y2="127.94"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop
+                      offset="0.09"
+                      stopColor="#B2354E"
+                      stopOpacity="0.86"
+                    />
+                    <stop offset="1" stopColor="#B2354E" stopOpacity="0" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint4_linear_266_38"
+                    x1="300.5"
+                    y1="49.2044"
+                    x2="328.518"
+                    y2="119.352"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop
+                      offset="0.09"
+                      stopColor="#B2354E"
+                      stopOpacity="0.86"
+                    />
+                    <stop offset="1" stopColor="#B2354E" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
           </center>
         </div>
         <div className="positions">
@@ -699,32 +851,55 @@ useEffect(() => {
                   Indulge in the juicy symphony of flavours Bite into Burger
                   Bliss
                 </p>
-                <button ref={buttonRef} data-value="1" onClick={(event) => handleButtonClick(event, "1")} className={styles.linebutton} id="moveButton">
+                <button
+                  ref={buttonRef}
+                  data-value="1"
+                  onClick={(event) => handleButtonClick(event, "1")}
+                  className={styles.linebutton}
+                  id="moveButton"
+                >
                   &nbsp;View&nbsp;
                 </button>
               </div>
             </div>
           </div>
           {/* sandwich */}
-          <div className="row99" style={{overflowX:"hidden"}}>
+          <div className="row99" style={{ overflowX: "hidden" }}>
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Grilled Sandwich</h1>
                 <p>
                   Savor Grilled Perfection: Where Crisp Meets Melt in Every Bite
                 </p>
-                <button ref={buttonRef} data-value="2" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  ref={buttonRef}
+                  data-value="2"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
-            <div className="col99" data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
-              <div className="d-flex justify-content-end align-items-end" >
-                <Image src={sandwich} alt="" className={styles.sandwich}  />
+            <div
+              className="col99"
+              data-aos="fade-left"
+              data-aos-delay="500"
+              data-aos-easing="linear"
+            >
+              <div className="d-flex justify-content-end align-items-end">
+                <Image src={sandwich} alt="" className={styles.sandwich} />
               </div>
             </div>
           </div>
           {/* Frenchfrys */}
-          <div className="row99" style={{overflowX:"hidden"}}>
-            <div className="col99" data-aos="fade-right" data-aos-delay="700" data-aos-easing="linear">
+          <div className="row99" style={{ overflowX: "hidden" }}>
+            <div
+              className="col99"
+              data-aos="fade-right"
+              data-aos-delay="700"
+              data-aos-easing="linear"
+            >
               <div>
                 <Image src={french} alt="" className={styles.Burgers} />
               </div>
@@ -736,7 +911,12 @@ useEffect(() => {
                   Crispy, Golden Delights: French Fries - The Irresistible
                   BiteSized Pleasure
                 </p>
-                <button data-value="3" ref={buttonRef} onClick={handleButtonClick} className={styles.linebutton}>
+                <button
+                  data-value="3"
+                  ref={buttonRef}
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
                   &nbsp;View&nbsp;
                 </button>
               </div>
@@ -752,19 +932,36 @@ useEffect(() => {
                   Pure Joy
                 </p>
 
-                <button ref={buttonRef} data-value="4" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  ref={buttonRef}
+                  data-value="4"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
-            <div className="col99" >
-              <div className="d-flex justify-content-end align-items-end" data-aos="fade-up"    data-aos-delay="300" data-aos-easing="linear">
+            <div className="col99">
+              <div
+                className="d-flex justify-content-end align-items-end"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
                 <Image src={nugget} alt="" className={styles.sandwich} />
               </div>
             </div>
           </div>
           {/* Moms */}
-          <div className="row99" style={{overflowX:"hidden"}}>
-            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+          <div className="row99" style={{ overflowX: "hidden" }}>
+            <div
+              className="col99"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div>
                 <Image src={momos} alt="" className={styles.Burgers} />
               </div>
@@ -776,12 +973,19 @@ useEffect(() => {
                   teamed to perfection, Eqach Bite a Burst of Flavour Momos, the
                   Delightful Dumplings
                 </p>
-                <button ref={buttonRef} data-value="5" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  ref={buttonRef}
+                  data-value="5"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
           </div>
           {/* pizza */}
-          <div className="row99" style={{overflowX:"hidden"}}>
+          <div className="row99" style={{ overflowX: "hidden" }}>
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Pizza's</h1>
@@ -790,20 +994,37 @@ useEffect(() => {
                   Crispy Crust Perfection
                 </p>
 
-                <button ref={buttonRef} data-value="6" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  ref={buttonRef}
+                  data-value="6"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
-            <div className="col99" data-aos="fade-left" data-aos-delay="400" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+            <div
+              className="col99"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="d-flex justify-content-end align-items-end">
                 <Image src={pizzas} alt="" className={styles.sandwich} />
               </div>
             </div>
           </div>
           {/* Wrap's */}
-          <div className="row99" style={{overflowX:"hidden"}}>
-            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+          <div className="row99" style={{ overflowX: "hidden" }}>
+            <div
+              className="col99"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div>
                 <Image src={wraps} alt="" className={styles.Burgers} />
               </div>
@@ -815,14 +1036,21 @@ useEffect(() => {
                   Wrapped With Love, Unveiling Layers of Flavour Wraps, the
                   Portable Pleasure for Every Plate
                 </p>
-                <button ref={buttonRef} data-value="7" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  ref={buttonRef}
+                  data-value="7"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
           </div>
 
           {/* Waffle's */}
 
-          <div className="row99" style={{overflowX:"hidden"}}>
+          <div className="row99" style={{ overflowX: "hidden" }}>
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Waffle's</h1>
@@ -831,11 +1059,23 @@ useEffect(() => {
                   Treats of Delight
                 </p>
 
-                <button ref={buttonRef} data-value="8" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  ref={buttonRef}
+                  data-value="8"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
-            <div className="col99" data-aos="fade-left" data-aos-delay="400" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+            <div
+              className="col99"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="d-flex justify-content-end align-items-end">
                 <Image src={waffles} alt="" className={styles.sandwich} />
               </div>
@@ -843,9 +1083,14 @@ useEffect(() => {
           </div>
 
           {/* Salads */}
-          <div className="row99" style={{overflowX:"hidden"}}>
-            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+          <div className="row99" style={{ overflowX: "hidden" }}>
+            <div
+              className="col99"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div>
                 <Image src={salads} alt="" className={styles.Burgers} />
               </div>
@@ -854,29 +1099,50 @@ useEffect(() => {
               <div className="text-center">
                 <h1>Salads</h1>
                 <p className="salad me-5">
-                  Golden Grids of Sweet Satisfaction Waffles, the Crispy Crowned <br />
+                  Golden Grids of Sweet Satisfaction Waffles, the Crispy Crowned{" "}
+                  <br />
                   Treats of Delight
                 </p>
-                <button ref={buttonRef} data-value="9" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  ref={buttonRef}
+                  data-value="9"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
           </div>
 
           {/* crushes */}
-          <div className="row99" style={{overflowX:"hidden"}}>
+          <div className="row99" style={{ overflowX: "hidden" }}>
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Crushes & Mojitos</h1>
                 <p>
-                  Sip, Savor, and Refresh: Crushes& Mojitos, the Cool Quenchers<br></br>
+                  Sip, Savor, and Refresh: Crushes& Mojitos, the Cool Quenchers
+                  <br></br>
                   for Any Occasin
                 </p>
 
-                <button ref={buttonRef} data-value="10" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  ref={buttonRef}
+                  data-value="10"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
-            <div className="col99" data-aos="fade-left" data-aos-delay="400" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+            <div
+              className="col99"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="d-flex justify-content-end align-items-end">
                 <Image src={crushes} alt="" className={styles.sandwich} />
               </div>
@@ -885,9 +1151,14 @@ useEffect(() => {
 
           {/* milkShakes */}
 
-          <div className="row99" style={{overflowX:"hidden"}}>
-            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+          <div className="row99" style={{ overflowX: "hidden" }}>
+            <div
+              className="col99"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div>
                 <Image src={milkShakes} alt="" className={styles.Burgers} />
               </div>
@@ -896,29 +1167,48 @@ useEffect(() => {
               <div className="text-center">
                 <h1>Milk Shakes</h1>
                 <p className="me-5">
-                &nbsp;&nbsp;&nbsp;&nbsp; Sip, Savor, and Refresh: Crushes& Mojitos, the Cool Quenchers <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp; Sip, Savor, and Refresh: Crushes&
+                  Mojitos, the Cool Quenchers <br />
                   for Any Occasin
                 </p>
-                <button data-value="11" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  data-value="11"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
           </div>
 
           {/* iceCream */}
-          <div className="row99" style={{overflowX:"hidden"}}>
+          <div className="row99" style={{ overflowX: "hidden" }}>
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Ice Creams</h1>
                 <p>
-                  Scoops of Happiness in Every Bite: Ice Creams, the Chilled <br></br>
+                  Scoops of Happiness in Every Bite: Ice Creams, the Chilled{" "}
+                  <br></br>
                   Delights That Melt Hearts
                 </p>
 
-                <button data-value="12" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  data-value="12"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
-            <div className="col99" data-aos="fade-left" data-aos-delay="400" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+            <div
+              className="col99"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="d-flex justify-content-end align-items-end">
                 <Image src={iceCream} alt="" className={styles.sandwich} />
               </div>
@@ -927,9 +1217,14 @@ useEffect(() => {
 
           {/* CrispyCombo */}
 
-          <div className="row99" style={{overflowX:"hidden"}}>
-            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+          <div className="row99" style={{ overflowX: "hidden" }}>
+            <div
+              className="col99"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div>
                 <Image src={CrispyCombo} alt="" className={styles.Burgers} />
               </div>
@@ -938,15 +1233,22 @@ useEffect(() => {
               <div className="text-center">
                 <h1>Crispy Combo</h1>
                 <p className="me-5">
-                  Crunchy Harmony in Every Bite The Crispy Combo, Where Flavour <br></br>
+                  Crunchy Harmony in Every Bite The Crispy Combo, Where Flavour{" "}
+                  <br></br>
                   and Texture Unite!
                 </p>
-                <button data-value="13" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+                <button
+                  data-value="13"
+                  onClick={handleButtonClick}
+                  className={styles.linebutton}
+                >
+                  &nbsp;View&nbsp;
+                </button>
               </div>
             </div>
           </div>
 
-{/* 
+          {/* 
           <Modal show={showModal} onHide={handleCloseModal} animation={false} >
        {data.map((post) => (
         <div>
@@ -1070,86 +1372,81 @@ useEffect(() => {
        ))}
 
 </Modal>  */}
-
-
-
         </div>
         <div className="footer">
-       <Container>
-       <Row>
-        <Col md={4}>
-           <div>
-            <div>
-              <div>
-                <h4>DONT BE SHY, SAY HI ! </h4>
-                  <p>4th Floor, Magna Parkview, Sri Shyam Nagar,<br></br> Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032.</p>
-               
-              </div>
-            
-            </div>
-           </div>
-        </Col>
-        <Col md={4} className="d-flex justify-content-center">
-          <div >
-            <div >
-              <h4 >TIMMINGS</h4>
-            </div>
-            <div className="weeks">
-              <span className="week" >monday</span>
-              <span>10am - 7pm</span>
-            </div>
-            <div>
-              <span className="week">tuesday</span>
-              <span>10am - 7pm</span>
-            </div>
-            <div>
-              <span className="week">Wednesday</span>
-              <span>10am - 7pm</span>
-            </div>
-            <div>
-              <span className="week">thursday</span>
-              <span>10am - 7pm</span>
-            </div>
-            <div>
-              <span className="week">Friday</span>
-              <span>10am - 7pm</span>
-            </div>
-            <div>
-              <span className="week">Saturday</span>
-              <span>10am - 7pm</span>
-            </div>
-            <div>
-              <span className="week">Sunday</span>
-              <span>10am - 7pm</span>
-            </div>
-            <div>
-
-            </div>
-          </div>
-        </Col>
-        <Col md={4} className="d-flex justify-content-center ">
-          <div>
-          <div>
-            <h4 >LOCATION</h4>
-
-          </div>
-          <div className="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.51534884543!2d78.36351517594053!3d17.43503120142943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb918b8329738f%3A0xfbf7bd3bf9e6e099!2sCode%20Connex%20Pvt.Ltd%20-%20Best%20Software%20Company%20in%20Hyderabad%20%7C%20Digital%20Marketing%20%7C%20Web%20Design%20%26%20Development%20%7C%20App%20Development!5e0!3m2!1sen!2sin!4v1708066169236!5m2!1sen!2sin" width="300" height="200"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          </div>
-        </Col>
-      </Row>
-       </Container>
-</div>
+          <Container>
+            <Row>
+              <Col md={4}>
+                <div>
+                  <div>
+                    <div>
+                      <h4>DONT BE SHY, SAY HI ! </h4>
+                      <p>
+                        4th Floor, Magna Parkview, Sri Shyam Nagar,<br></br>{" "}
+                        Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              <Col md={4} className="d-flex justify-content-center">
+                <div>
+                  <div>
+                    <h4>TIMMINGS</h4>
+                  </div>
+                  <div className="weeks">
+                    <span className="week">monday</span>
+                    <span>10am - 7pm</span>
+                  </div>
+                  <div>
+                    <span className="week">tuesday</span>
+                    <span>10am - 7pm</span>
+                  </div>
+                  <div>
+                    <span className="week">Wednesday</span>
+                    <span>10am - 7pm</span>
+                  </div>
+                  <div>
+                    <span className="week">thursday</span>
+                    <span>10am - 7pm</span>
+                  </div>
+                  <div>
+                    <span className="week">Friday</span>
+                    <span>10am - 7pm</span>
+                  </div>
+                  <div>
+                    <span className="week">Saturday</span>
+                    <span>10am - 7pm</span>
+                  </div>
+                  <div>
+                    <span className="week">Sunday</span>
+                    <span>10am - 7pm</span>
+                  </div>
+                  <div></div>
+                </div>
+              </Col>
+              <Col md={4} className="d-flex justify-content-center ">
+                <div>
+                  <div>
+                    <h4>LOCATION</h4>
+                  </div>
+                  <div className="map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.51534884543!2d78.36351517594053!3d17.43503120142943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb918b8329738f%3A0xfbf7bd3bf9e6e099!2sCode%20Connex%20Pvt.Ltd%20-%20Best%20Software%20Company%20in%20Hyderabad%20%7C%20Digital%20Marketing%20%7C%20Web%20Design%20%26%20Development%20%7C%20App%20Development!5e0!3m2!1sen!2sin!4v1708066169236!5m2!1sen!2sin"
+                      width="300"
+                      height="200"
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
-
-
-
-
-    
-
     </div>
-  
   );
 };
 
