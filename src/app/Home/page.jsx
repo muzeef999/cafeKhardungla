@@ -23,7 +23,7 @@ import salads from "../../asserts/salads.png";
 import crushes from "../../asserts/crushes.png";
 import milkShakes from "../../asserts/milkshake.png";
 import iceCream from "../../asserts/icecream.png";
-import CrispyCombo from "../../asserts/crispycombo.png";
+import CrispyCombo from "../../asserts/crispycombo9.png";
 
 import Image from "next/image";
 import { Carousel, Col, Modal, Row, Button, Container } from "react-bootstrap";
