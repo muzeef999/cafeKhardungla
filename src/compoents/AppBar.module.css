@@ -1,0 +1,71 @@
+.myCustomContainer {
+    padding-left: 80px ;
+    padding-right: 80px ;
+    /* or margin-left and margin-right for margins */
+  }
+  .navButton{
+    background-color: transparent !important;
+    border-radius: 5px;
+    border: 1px solid #FFF !important;
+    
+  }
+  .navButton:hover {
+    background-color: #063255 !important;
+    border-radius: 5px;
+  }
+  
+  .navPhonePo{
+    color: #063255;
+    text-decoration: none;
+  }
+  
+  .navbarCustom {
+    /* Other styles */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    /* position: relative;
+    width: 100% !important; */
+   
+  }
+
+  .appbarlogo {
+    width: 8% !important;
+    height: auto;
+    z-index: 99;
+  }
+
+  .navlinksdesign {
+    font-size: 20px !important;
+  }
+  
+  .service{
+    font-weight: 800;
+    color: #FFF;
+  }
+  .service1{
+    color: #FFF;
+    font-size: 20px;
+  }
+  .service2 {
+    color: #FFF;
+    font-size: 20px;
+    list-style-type: circle;
+   
+  }
+
+  .vertical {
+    border-left: 2px solid #FFF;
+    height: 230px;
+    position:absolute;
+    
+}
+.navlinksdesignbutton{
+  background-color: #FFF;
+  font-style: bold;
+  border-radius: 30px;
+  border: 1px solid #500f17;
+   
+  padding: 10px 18px !important;
+  font-size: 20px;
+  box-shadow:
+  0.4em 0.4em 1em #8c8c8c;
+}

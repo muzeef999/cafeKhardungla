@@ -228,3 +228,8 @@
     transform: rotate(0deg);
   }
 }
+
+.col99 div p{
+  font-size:25px !important;
+}
+
