@@ -4,9 +4,14 @@
 // }
 {
   "extends": "next/core-web-vitals",
+<<<<<<< HEAD
   "rules": {
     "next/no-css-tags": "off", // Example of disabling a rule
     // Add more rules to disable as needed
+=======
+  "rules":{
+    "react/no-unescaped-entities":0
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
   }
 }
  

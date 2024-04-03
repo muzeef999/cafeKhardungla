@@ -30,7 +30,10 @@ export default function RootLayout({ children }) {
         <div>
           <Appbar />
           {children}
+<<<<<<< HEAD
           {/* <Footer /> */}
+=======
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
         </div>
       </body>
     </html>

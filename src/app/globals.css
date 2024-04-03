@@ -193,7 +193,10 @@ z-index: 1;
 
 .index-module_type__E-SaG::after{
   display: none !important;
+<<<<<<< HEAD
   /* color: orange !important; */
+=======
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
 }
 
 #rect {
@@ -298,7 +301,11 @@ text-align: center;
 }
 
 .footer{
+<<<<<<< HEAD
  
+=======
+  position: relative !important;
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
 height:400px;
 width: 100%;
 background-color: #500f17;
@@ -331,10 +338,14 @@ color:WHITE;
   }
 
 
+<<<<<<< HEAD
   .col99 div h1 {
     font-size: 35px !important;
     font-weight: 600;
 }
+=======
+
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
 
 
 
@@ -355,7 +366,10 @@ color:WHITE;
   }
   .index-module_type__E-SaG{
     font-size: 45px !important; 
+<<<<<<< HEAD
    
+=======
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
   }
   .hero-content h2{
     font-size: 60px !important; 
@@ -365,6 +379,7 @@ color:WHITE;
     font-size: 40px !important; 
   }
   .waffle-content{
+<<<<<<< HEAD
     width: 80%; 
   }
   .col99 div p{
@@ -374,10 +389,15 @@ color:WHITE;
     font-size: 30px !important;
     font-weight: 600;
 }
+=======
+    width: 80%;
+  }
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
 
  
 }
 
+<<<<<<< HEAD
 @media screen and (max-width:1400px){
   .col99 div p{
     width: 430px !important;
@@ -488,6 +508,8 @@ color:WHITE;
   }
 }
 
+=======
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
 /* for mobile deve *************************************************** */
 
 @media screen and (max-width:430px) {
@@ -499,8 +521,13 @@ color:WHITE;
     margin-left: 0px !important;
   }
   .AppBar_myCustomContainer__2mq2G {
+<<<<<<< HEAD
   padding-left: 14px !important;
   padding-right:14px !important;
+=======
+  padding-left: 30px !important;
+  padding-right:30px !important;
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
   }
 
   .hero-banner{
@@ -519,7 +546,11 @@ color:WHITE;
     width: 20% !important;
   }
   .hero-content h2 span{
+<<<<<<< HEAD
     font-size:45px !important; 
+=======
+    font-size:35px !important; 
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
   }
   .home_slider__aEPIk{
     margin-left:40px !important;
@@ -529,7 +560,11 @@ color:WHITE;
   }
   .footer{
     position: absolute !important;
+<<<<<<< HEAD
     top:4150px;
+=======
+    bottom:-500% !important;
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
     height: 700px;
   }
   #OBJECTS{
@@ -559,6 +594,7 @@ color:WHITE;
     margin-top: 45px !important;
     margin-bottom: 30px !important;
   } 
+<<<<<<< HEAD
   .col99 div p{
     font-size: 16px !important;
     width: 205px !important;
@@ -569,11 +605,14 @@ color:WHITE;
   font-size:22px;
   font-weight: 600;
 
+=======
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
 }
 
 @media screen and (max-width:400px) {
   .footer{
     position: absolute !important;
+<<<<<<< HEAD
     top:4000px;
     height: 700px;
   }
@@ -626,6 +665,20 @@ color:WHITE;
   .footer{
     position: absolute !important;
     top:3764px;
+=======
+    bottom:-490% !important;
+    height: 700px;
+  }
+  .allproduct h1{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .footer{
+    position: absolute !important;
+    bottom:-480% !important;
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
     height: 700px;
   }
   .hero-content h1{
@@ -634,6 +687,7 @@ color:WHITE;
   .hero-content h2{
     font-size:45px !important;
   }
+<<<<<<< HEAD
   .col99 div p{
     font-size: 16px !important;
     width:180px !important;
@@ -652,6 +706,10 @@ color:WHITE;
   font-weight: 600;
 }
 
+=======
+  /* div.hero */
+}
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
 
 .audiodata{
 visibility: hidden;
@@ -662,6 +720,7 @@ visibility: hidden;
   font-weight: 800;
 margin-top: 30px;
   color: #500f17;
+<<<<<<< HEAD
 }
 .spandata{
   color: orange !important;
@@ -670,3 +729,6 @@ margin-top: 30px;
   color: orange !important;
   font-size:86px !important;
 } 
+=======
+}
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
