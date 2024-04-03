@@ -1,0 +1,119 @@
+.homecontainer{
+    display: flex;
+}
+.svgbackground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.blockl{
+ position: relative;
+ font-size: 50px;
+ margin-top: 50px;
+ font-weight: 800;
+ float: left;
+}
+.blockr{
+    position: relative;
+    font-size: 50px;
+    margin-top: 50px;
+    font-weight: 800;
+    float: right;
+}
+.linebutton{
+    color: #FFF;
+    background-color: #500f17;
+    border-radius: 30px;
+     width: 125px;
+     height: 40px;
+     padding: 15px;
+     line-height: 3px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    position: relative;
+}
+.linebutton:active{
+    scale: 0.9;
+}
+
+/* .linebutton::before{
+    content: "";
+    position: absolute;
+    background-image: url('http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpizzas.7b2f485b.png&w=640&q=75');
+    width:0%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1.3s;
+}
+.linebutton:hover::before{
+    width: 100%;
+    background-color: white;
+} */
+
+
+
+.coffe{
+    width: 80%;
+    height: auto;
+}
+.slider{
+    width: 80%;
+    height:auto;
+}
+.change{
+    position: relative;
+}
+.Burgers{
+    width: 60%;
+    height: auto;
+    align-items: start;
+    text-align: left;
+    justify-content: left;
+}
+.sandwich{
+    width: 60%;
+    height: auto;
+    align-items: end;
+    text-align: right;
+    justify-content: right;
+}
+
+.smallheadmodel{
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+}
+.smallheaddesign{
+
+    text-align: justify;
+}
+
+.smallheadprice{
+    color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #500f17;
+    text-align: center;
+
+}
+
+/* .box{
+    position: relative !important;
+    z-index: 99999999999 !important;
+bottom: 10%;
+} */
+
+/* #OBJECTS{
+display: none !important;
+} */
+
