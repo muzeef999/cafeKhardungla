@@ -33,7 +33,11 @@ export default function RootLayout({ children }) {
 <<<<<<< HEAD
           {/* <Footer /> */}
 =======
+<<<<<<< HEAD
+          {/* <Footer /> */}
+=======
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
         </div>
       </body>
     </html>

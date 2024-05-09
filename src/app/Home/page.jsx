@@ -6,8 +6,12 @@ import "aos/dist/aos.css";
 <<<<<<< HEAD
 import { TypeAnimation } from 'react-type-animation';
 =======
+<<<<<<< HEAD
+import { TypeAnimation } from 'react-type-animation';
+=======
 import { TypeAnimation } from "react-type-animation";
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/all";
 import gsap from "gsap";
@@ -17,9 +21,14 @@ import { Typewriter } from "react-simple-typewriter";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 =======
+<<<<<<< HEAD
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+=======
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 import Burgers from "../../asserts/Burgers.png";
 import sandwich from "../../asserts/sandwich.png";
 import french from "../../asserts/french.png";
@@ -36,10 +45,16 @@ import iceCream from "../../asserts/iceCream.png";
 import CrispyCombo from "../../asserts/CrispyCombo.png";
 import coffe from "../../asserts/coffe.png";
 =======
+<<<<<<< HEAD
+import iceCream from "../../asserts/iceCream.png";
+import CrispyCombo from "../../asserts/CrispyCombo.png";
+import coffe from "../../asserts/coffe.png";
+=======
 import iceCream from "../../asserts/icecream.png";
 import CrispyCombo from "../../asserts/crispycombo9.png";
 
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 import Image from "next/image";
 import { Carousel, Col, Modal, Row, Button, Container } from "react-bootstrap";
 import Slider from "react-slick";
@@ -47,22 +62,31 @@ import BurgersSlider from "../../asserts/Burgers-slider.png";
 import WafflesSlider from "../../asserts/waffles-slider.png";
 import MilkSlider from "../../asserts/Milk-shake.png";
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 import logo from "../../asserts/cafe2.png"
 import data from "./data";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Footer from "@/compoents/Footer";
+<<<<<<< HEAD
+=======
 =======
 import logo from "../../asserts/cafe2.png";
 import data from "./data";
 import Head from "next/head";
 import { useRouter } from "next/router";
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 // import audiofr from "../../music/music.mp3"
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 const Homepage = () => {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   const [show, setShow] = useState(false); 
   const buttonRef = useRef(null);
   const [store,setstore] = useState({})
@@ -73,6 +97,8 @@ const [value,setvalue]=useState(false)
   // lenis start **************************************
 
 
+<<<<<<< HEAD
+=======
 =======
   const [show, setShow] = useState(false);
   const buttonRef = useRef(null);
@@ -84,6 +110,7 @@ const [value,setvalue]=useState(false)
   // lenis start **************************************
 
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   // useEffect(() => {
   //   // Initialize Lenis instance
   //   const lenis = new Lenis();
@@ -109,6 +136,9 @@ const [value,setvalue]=useState(false)
   // }, []);
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     // useEffect(()=>{
     //   const lenis = new Lenis();
       
@@ -150,6 +180,8 @@ const [value,setvalue]=useState(false)
   // react slick carosual ****************************
 
 
+<<<<<<< HEAD
+=======
 =======
   // useEffect(()=>{
   //   const lenis = new Lenis();
@@ -185,6 +217,7 @@ const [value,setvalue]=useState(false)
   // react slick carosual ****************************
 
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   const settings = {
     dots: true,
     fade: true,
@@ -201,7 +234,13 @@ const [value,setvalue]=useState(false)
 
 
 =======
+<<<<<<< HEAD
+
+
+
+=======
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   // react slick carosual end ************************
 
   // const [showModal, setShowModal] = useState(false);
@@ -209,6 +248,9 @@ const [value,setvalue]=useState(false)
   const handleClose = () => setShow(false);
   useEffect(() => {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     AOS.init({
       
     });
@@ -243,6 +285,8 @@ setShow(true)
 
     });
 
+<<<<<<< HEAD
+=======
 =======
     AOS.init({});
   }, []);
@@ -280,6 +324,7 @@ setShow(true)
       ease: "none",
     });
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   };
 
   useEffect(() => {
@@ -287,6 +332,9 @@ setShow(true)
       scrollTrigger: {
         trigger: "#path",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
         start: "top 70%",
         end: "bottom center",
         scrub:1.3,
@@ -296,6 +344,8 @@ setShow(true)
         //  console.log("scroll on revers")
       }
       
+<<<<<<< HEAD
+=======
 =======
         start: "top 10%",
         end: "bottom center",
@@ -305,6 +355,7 @@ setShow(true)
           console.log("scroll on revers");
         },
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
       },
       ease: "none",
       motionPath: {
@@ -312,6 +363,9 @@ setShow(true)
         align: "#path",
         autoRotate: true,
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
         start: 0.000,
         alignOrigin: [0.5, 0.5],
       },
@@ -319,6 +373,8 @@ setShow(true)
     
 
   },[]);
+<<<<<<< HEAD
+=======
 =======
         start: 0.05,
 
@@ -327,6 +383,7 @@ setShow(true)
     });
   }, []);
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   useEffect(() => {
     // Create a GSAP timeline
     const timeline = gsap.timeline({
@@ -335,6 +392,9 @@ setShow(true)
         start: "70% 78%",
         end: "bottom bottom",
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
         scrub:2,
         onEnterBack: handleScrollStart, // call handleScrollStart when scrolling back
         onEnter: handleScrollEnd, // call handleScrollEnd when scrolling forward
@@ -344,6 +404,8 @@ setShow(true)
     // Add animations to the timeline
     timeline.to("#cap", { y:200, opacity:1 });
     timeline.to("#light", {opacity:0 });
+<<<<<<< HEAD
+=======
 =======
         scrub: 2,
 
@@ -356,6 +418,7 @@ setShow(true)
     timeline.to("#cap", { y: 200, opacity: 1 });
     timeline.to("#light", { opacity: 0 });
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 
     // Clean up function
     return () => {
@@ -369,8 +432,12 @@ setShow(true)
 <<<<<<< HEAD
     var a =  document.querySelector("#OBJECTS");
 =======
+<<<<<<< HEAD
+    var a =  document.querySelector("#OBJECTS");
+=======
     var a = document.querySelector("#OBJECTS");
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     // Perform actions on completion of the animation
     // For example, add a class to the selected element
     if (a) {
@@ -382,23 +449,32 @@ setShow(true)
   // Define handleScrollStart function
   const handleScrollStart = () => {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     var a =  document.querySelector("#OBJECTS");
     // Remove the added class to return to initial position
     if (a) {
       a.classList.remove("rotate-data");
          
+<<<<<<< HEAD
+=======
 =======
     var a = document.querySelector("#OBJECTS");
     // Remove the added class to return to initial position
     if (a) {
       a.classList.remove("rotate-data");
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     }
   };
 
   const [reverseScrollCount, setReverseScrollCount] = useState(0);
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   // console.log(reverseScrollCount)
 
 // test testimonial start *********************************
@@ -553,6 +629,8 @@ useEffect(() => {
 </audio> */}
 
      <Modal
+<<<<<<< HEAD
+=======
 =======
   console.log(reverseScrollCount);
 
@@ -700,6 +778,7 @@ useEffect(() => {
 
       <Modal
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
         show={show}
         onHide={handleClose}
         backdrop="static"
@@ -707,6 +786,9 @@ useEffect(() => {
       >
         <Modal.Header closeButton>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
           <Modal.Title> <h4>{store[0] && store[0].heading}</h4></Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -719,6 +801,8 @@ useEffect(() => {
         <h5>{store[0] && store[0].Conclusiondata}</h5>
       </div>
      </div>
+<<<<<<< HEAD
+=======
 =======
           <Modal.Title>
             {" "}
@@ -740,6 +824,7 @@ useEffect(() => {
             </div>
           </div>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
@@ -749,6 +834,9 @@ useEffect(() => {
       </Modal>
       <Row className="hero-banner">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
       <Col md={6}>
       <div className="hero-content ms-5">
         <h1 id="heading">
@@ -802,6 +890,8 @@ useEffect(() => {
   <h1 className="text-center">All Products</h1>
 </div>
       
+<<<<<<< HEAD
+=======
 =======
         <Col md={6}>
           <div className="hero-content ms-5">
@@ -856,6 +946,7 @@ useEffect(() => {
       </div>
 
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
       <div className="main_background">
         <div className="justify-content-center align-items-center">
           <center>
@@ -998,6 +1089,9 @@ useEffect(() => {
           </center>
           <center>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   <div className="box-contain">
   <svg width="45%" height="auto" viewBox="0 0 733 658" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginTop:"-430px"}}>
 <g id="OBJECTS">
@@ -1135,6 +1229,8 @@ useEffect(() => {
 </div>
      
              
+<<<<<<< HEAD
+=======
 =======
             <div className="box-contain">
               <svg
@@ -1372,6 +1468,7 @@ useEffect(() => {
             </div>
           </center>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
         </div>
         <div className="positions">
           {/* Bugres */}
@@ -1386,12 +1483,20 @@ useEffect(() => {
 <<<<<<< HEAD
                 <h1>Burgers</h1>
 =======
+<<<<<<< HEAD
+                <h1>Burgers</h1>
+=======
                 <h1>{`Burgers`}</h1>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 <p>
                   Indulge in the juicy symphony of flavours Bite into Burger
                   Bliss
                 </p>
+<<<<<<< HEAD
+                <button ref={buttonRef} data-value="1" onClick={(event) => handleButtonClick(event, "1")} className={styles.linebutton} id="moveButton">
+                  &nbsp;View&nbsp;
+=======
 <<<<<<< HEAD
                 <button ref={buttonRef} data-value="1" onClick={(event) => handleButtonClick(event, "1")} className={styles.linebutton} id="moveButton">
                   &nbsp;View&nbsp;
@@ -1405,6 +1510,7 @@ useEffect(() => {
                 >
                   View
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 </button>
               </div>
             </div>
@@ -1413,8 +1519,12 @@ useEffect(() => {
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
 =======
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+=======
           <div className="row99" style={{ overflowX: "hidden" }}>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Grilled Sandwich</h1>
@@ -1422,12 +1532,17 @@ useEffect(() => {
                   Savor Grilled Perfection: Where Crisp Meets Melt in Every Bite
                 </p>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 <button ref={buttonRef} data-value="2" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
               </div>
             </div>
             <div className="col99" data-aos="fade-left" data-aos-delay="500" data-aos-easing="linear">
               <div className="d-flex justify-content-end align-items-end" >
                 <Image src={sandwich} alt="" className={styles.sandwich}  />
+<<<<<<< HEAD
+=======
 =======
                 <button
                   ref={buttonRef}
@@ -1448,10 +1563,15 @@ useEffect(() => {
               <div className="d-flex justify-content-end align-items-end">
                 <Image src={sandwich} alt="" className={styles.sandwich} />
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               </div>
             </div>
           </div>
           {/* Frenchfrys */}
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+            <div className="col99" data-aos="fade-right" data-aos-delay="700" data-aos-easing="linear">
+=======
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
             <div className="col99" data-aos="fade-right" data-aos-delay="700" data-aos-easing="linear">
@@ -1464,6 +1584,7 @@ useEffect(() => {
               data-aos-easing="linear"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div>
                 <Image src={french} alt="" className={styles.Burgers} />
               </div>
@@ -1479,6 +1600,10 @@ useEffect(() => {
                 <button data-value="3" ref={buttonRef} onClick={handleButtonClick} className={styles.linebutton}>
                   &nbsp;View&nbsp;
 =======
+<<<<<<< HEAD
+                <button data-value="3" ref={buttonRef} onClick={handleButtonClick} className={styles.linebutton}>
+                  &nbsp;View&nbsp;
+=======
                 <button
                   data-value="3"
                   ref={buttonRef}
@@ -1487,6 +1612,7 @@ useEffect(() => {
                 >
                   View
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 </button>
               </div>
             </div>
@@ -1502,11 +1628,16 @@ useEffect(() => {
                 </p>
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 <button ref={buttonRef} data-value="4" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
               </div>
             </div>
             <div className="col99" >
               <div className="d-flex justify-content-end align-items-end" data-aos="fade-up"    data-aos-delay="300" data-aos-easing="linear">
+<<<<<<< HEAD
+=======
 =======
                 <button
                   ref={buttonRef}
@@ -1526,11 +1657,17 @@ useEffect(() => {
                 data-aos-easing="linear"
               >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 <Image src={nugget} alt="" className={styles.sandwich} />
               </div>
             </div>
           </div>
           {/* Moms */}
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+=======
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
             <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
@@ -1545,6 +1682,7 @@ useEffect(() => {
               data-aos-easing="ease-in-sine"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div>
                 <Image src={momos} alt="" className={styles.Burgers} />
               </div>
@@ -1559,6 +1697,9 @@ useEffect(() => {
 <<<<<<< HEAD
                 <button ref={buttonRef} data-value="5" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
 =======
+<<<<<<< HEAD
+                <button ref={buttonRef} data-value="5" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+=======
                 <button
                   ref={buttonRef}
                   data-value="5"
@@ -1568,6 +1709,7 @@ useEffect(() => {
                   View
                 </button>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               </div>
             </div>
           </div>
@@ -1575,8 +1717,12 @@ useEffect(() => {
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
 =======
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+=======
           <div className="row99" style={{ overflowX: "hidden" }}>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Pizza's</h1>
@@ -1586,11 +1732,16 @@ useEffect(() => {
                 </p>
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 <button ref={buttonRef} data-value="6" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
               </div>
             </div>
             <div className="col99" data-aos="fade-left" data-aos-delay="400" data-aos-offset="300"
      data-aos-easing="ease-in-sine">
+<<<<<<< HEAD
+=======
 =======
                 <button
                   ref={buttonRef}
@@ -1610,12 +1761,18 @@ useEffect(() => {
               data-aos-easing="ease-in-sine"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div className="d-flex justify-content-end align-items-end">
                 <Image src={pizzas} alt="" className={styles.sandwich} />
               </div>
             </div>
           </div>
           {/* Wrap's */}
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+=======
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
             <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
@@ -1630,6 +1787,7 @@ useEffect(() => {
               data-aos-easing="ease-in-sine"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div>
                 <Image src={wraps} alt="" className={styles.Burgers} />
               </div>
@@ -1639,12 +1797,19 @@ useEffect(() => {
 <<<<<<< HEAD
                 <h1>Wraps</h1>
 =======
+<<<<<<< HEAD
+                <h1>Wraps</h1>
+=======
                 <h1>Wrap's</h1>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 <p>
                   Wrapped With Love, Unveiling Layers of Flavour Wraps, the
                   Portable Pleasure for Every Plate
                 </p>
+<<<<<<< HEAD
+                <button ref={buttonRef} data-value="7" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+=======
 <<<<<<< HEAD
                 <button ref={buttonRef} data-value="7" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
 =======
@@ -1657,6 +1822,7 @@ useEffect(() => {
                   View
                 </button>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               </div>
             </div>
           </div>
@@ -1664,27 +1830,38 @@ useEffect(() => {
           {/* Waffle's */}
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
           <div className="row99" style={{overflowX:"hidden"}}>
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Waffles</h1>
+<<<<<<< HEAD
+=======
 =======
           <div className="row99" style={{ overflowX: "hidden" }}>
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Waffle's</h1>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 <p className="waffle-content">
                   Golden Grids Of Sweet Satisfaction Waffles, the Crispy Crowned
                   Treats of Delight
                 </p>
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 <button ref={buttonRef} data-value="8" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
               </div>
             </div>
             <div className="col99" data-aos="fade-left" data-aos-delay="400" data-aos-offset="300"
      data-aos-easing="ease-in-sine">
+<<<<<<< HEAD
+=======
 =======
                 <button
                   ref={buttonRef}
@@ -1704,6 +1881,7 @@ useEffect(() => {
               data-aos-easing="ease-in-sine"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div className="d-flex justify-content-end align-items-end">
                 <Image src={waffles} alt="" className={styles.sandwich} />
               </div>
@@ -1711,6 +1889,11 @@ useEffect(() => {
           </div>
 
           {/* Salads */}
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+=======
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
             <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
@@ -1725,6 +1908,7 @@ useEffect(() => {
               data-aos-easing="ease-in-sine"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div>
                 <Image src={salads} alt="" className={styles.Burgers} />
               </div>
@@ -1734,10 +1918,15 @@ useEffect(() => {
                 <h1>Salads</h1>
                 <p className="salad me-5">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                   Golden Grids of Sweet Satisfaction Waffles, the Crispy Crowned <br />
                   Treats of Delight
                 </p>
                 <button ref={buttonRef} data-value="9" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+<<<<<<< HEAD
+=======
 =======
                   Golden Grids of Sweet Satisfaction Waffles, the Crispy Crowned{" "}
                   <br />
@@ -1752,6 +1941,7 @@ useEffect(() => {
                   View
                 </button>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               </div>
             </div>
           </div>
@@ -1760,13 +1950,20 @@ useEffect(() => {
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
 =======
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+=======
           <div className="row99" style={{ overflowX: "hidden" }}>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Crushes & Mojitos</h1>
                 <p>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                   Sip, Savor, and Refresh: Crushes& Mojitos, the Cool Quenchers<br></br>
                   for Any Occasin
                 </p>
@@ -1776,6 +1973,8 @@ useEffect(() => {
             </div>
             <div className="col99" data-aos="fade-left" data-aos-delay="400" data-aos-offset="300"
      data-aos-easing="ease-in-sine">
+<<<<<<< HEAD
+=======
 =======
                   Sip, Savor, and Refresh: Crushes& Mojitos, the Cool Quenchers
                   <br></br>
@@ -1800,6 +1999,7 @@ useEffect(() => {
               data-aos-easing="ease-in-sine"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div className="d-flex justify-content-end align-items-end">
                 <Image src={crushes} alt="" className={styles.sandwich} />
               </div>
@@ -1808,6 +2008,11 @@ useEffect(() => {
 
           {/* milkShakes */}
 
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+=======
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
             <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
@@ -1822,6 +2027,7 @@ useEffect(() => {
               data-aos-easing="ease-in-sine"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div>
                 <Image src={milkShakes} alt="" className={styles.Burgers} />
               </div>
@@ -1831,10 +2037,15 @@ useEffect(() => {
                 <h1>Milk Shakes</h1>
                 <p className="me-5">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                 &nbsp;&nbsp;&nbsp;&nbsp; Sip, Savor, and Refresh: Crushes& Mojitos, the Cool Quenchers <br />
                   for Any Occasin
                 </p>
                 <button data-value="11" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+<<<<<<< HEAD
+=======
 =======
                   Sip, Savor, and Refresh: Crushes & Mojitos, the Cool Quenchers{" "}
                   <br />
@@ -1848,6 +2059,7 @@ useEffect(() => {
                   View
                 </button>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               </div>
             </div>
           </div>
@@ -1856,13 +2068,20 @@ useEffect(() => {
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
 =======
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+=======
           <div className="row99" style={{ overflowX: "hidden" }}>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
             <div className="col99 d-flex justify-content-center align-items-center">
               <div className="text-center">
                 <h1>Ice Creams</h1>
                 <p>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                   Scoops of Happiness in Every Bite: Ice Creams, the Chilled <br></br>
                   Delights That Melt Hearts
                 </p>
@@ -1872,6 +2091,8 @@ useEffect(() => {
             </div>
             <div className="col99" data-aos="fade-left" data-aos-delay="400" data-aos-offset="300"
      data-aos-easing="ease-in-sine">
+<<<<<<< HEAD
+=======
 =======
                   Scoops of Happiness in Every Bite: Ice Creams, the Chilled{" "}
                   <br></br>
@@ -1895,6 +2116,7 @@ useEffect(() => {
               data-aos-easing="ease-in-sine"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div className="d-flex justify-content-end align-items-end">
                 <Image src={iceCream} alt="" className={styles.sandwich} />
               </div>
@@ -1903,6 +2125,11 @@ useEffect(() => {
 
           {/* CrispyCombo */}
 
+<<<<<<< HEAD
+          <div className="row99" style={{overflowX:"hidden"}}>
+            <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+=======
 <<<<<<< HEAD
           <div className="row99" style={{overflowX:"hidden"}}>
             <div className="col99" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300"
@@ -1917,6 +2144,7 @@ useEffect(() => {
               data-aos-easing="ease-in-sine"
             >
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               <div>
                 <Image src={CrispyCombo} alt="" className={styles.Burgers} />
               </div>
@@ -1926,10 +2154,15 @@ useEffect(() => {
                 <h1>Crispy Combo</h1>
                 <p className="me-5">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
                   Crunchy Harmony in Every Bite The Crispy Combo, Where Flavour <br></br>
                   and Texture Unite!
                 </p>
                 <button data-value="13" onClick={handleButtonClick} className={styles.linebutton}>&nbsp;View&nbsp;</button>
+<<<<<<< HEAD
+=======
 =======
                   Crunchy Harmony in Every Bite The Crispy Combo, Where Flavour{" "}
                   <br></br>
@@ -1943,6 +2176,7 @@ useEffect(() => {
                   View
                 </button>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
               </div>
             </div>
           </div>
@@ -1950,8 +2184,12 @@ useEffect(() => {
 <<<<<<< HEAD
 {/* 
 =======
+<<<<<<< HEAD
+{/* 
+=======
           {/* 
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
           <Modal show={showModal} onHide={handleCloseModal} animation={false} >
        {data.map((post) => (
         <div>
@@ -2076,6 +2314,9 @@ useEffect(() => {
 
 </Modal>  */}
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 
 
 
@@ -2090,6 +2331,8 @@ useEffect(() => {
 
     </div>
   
+<<<<<<< HEAD
+=======
 =======
         </div>
         <div className="footer">
@@ -2167,6 +2410,7 @@ useEffect(() => {
       </div>
     </div>
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   );
 };
 

@@ -196,7 +196,11 @@ z-index: 1;
 <<<<<<< HEAD
   /* color: orange !important; */
 =======
+<<<<<<< HEAD
+  /* color: orange !important; */
+=======
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 }
 
 #rect {
@@ -304,8 +308,12 @@ text-align: center;
 <<<<<<< HEAD
  
 =======
+<<<<<<< HEAD
+ 
+=======
   position: relative !important;
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 height:400px;
 width: 100%;
 background-color: #500f17;
@@ -339,13 +347,19 @@ color:WHITE;
 
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   .col99 div h1 {
     font-size: 35px !important;
     font-weight: 600;
 }
+<<<<<<< HEAD
+=======
 =======
 
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 
 
 
@@ -369,7 +383,11 @@ color:WHITE;
 <<<<<<< HEAD
    
 =======
+<<<<<<< HEAD
+   
+=======
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   }
   .hero-content h2{
     font-size: 60px !important; 
@@ -380,6 +398,9 @@ color:WHITE;
   }
   .waffle-content{
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     width: 80%; 
   }
   .col99 div p{
@@ -389,15 +410,21 @@ color:WHITE;
     font-size: 30px !important;
     font-weight: 600;
 }
+<<<<<<< HEAD
+=======
 =======
     width: 80%;
   }
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 
  
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 @media screen and (max-width:1400px){
   .col99 div p{
     width: 430px !important;
@@ -425,7 +452,11 @@ color:WHITE;
 }
 }
 
+<<<<<<< HEAD
+@media scren and (max-width:600px){
+=======
 @media screen and (max-width:600px){
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     .hero-content h1{
     font-size:50px;
   }
@@ -464,7 +495,11 @@ color:WHITE;
   }
   .footer{
     position: absolute !important;
+<<<<<<< HEAD
+    top:4150px;
+=======
     top:4950px;
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     height: 700px;
   }
   #OBJECTS{
@@ -498,6 +533,10 @@ color:WHITE;
     font-size: 16px !important;
     width: 205px !important;
   }
+<<<<<<< HEAD
+}
+
+=======
   #svg{
     display: none !important  ;
   }
@@ -510,6 +549,7 @@ color:WHITE;
 
 =======
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 /* for mobile deve *************************************************** */
 
 @media screen and (max-width:430px) {
@@ -525,9 +565,14 @@ color:WHITE;
   padding-left: 14px !important;
   padding-right:14px !important;
 =======
+<<<<<<< HEAD
+  padding-left: 14px !important;
+  padding-right:14px !important;
+=======
   padding-left: 30px !important;
   padding-right:30px !important;
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   }
 
   .hero-banner{
@@ -549,8 +594,12 @@ color:WHITE;
 <<<<<<< HEAD
     font-size:45px !important; 
 =======
+<<<<<<< HEAD
+    font-size:45px !important; 
+=======
     font-size:35px !important; 
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   }
   .home_slider__aEPIk{
     margin-left:40px !important;
@@ -563,8 +612,12 @@ color:WHITE;
 <<<<<<< HEAD
     top:4150px;
 =======
+<<<<<<< HEAD
+    top:4150px;
+=======
     bottom:-500% !important;
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     height: 700px;
   }
   #OBJECTS{
@@ -595,6 +648,9 @@ color:WHITE;
     margin-bottom: 30px !important;
   } 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   .col99 div p{
     font-size: 16px !important;
     width: 205px !important;
@@ -605,14 +661,20 @@ color:WHITE;
   font-size:22px;
   font-weight: 600;
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 }
 
 @media screen and (max-width:400px) {
   .footer{
     position: absolute !important;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     top:4000px;
     height: 700px;
   }
@@ -665,6 +727,8 @@ color:WHITE;
   .footer{
     position: absolute !important;
     top:3764px;
+<<<<<<< HEAD
+=======
 =======
     bottom:-490% !important;
     height: 700px;
@@ -679,6 +743,7 @@ color:WHITE;
     position: absolute !important;
     bottom:-480% !important;
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
     height: 700px;
   }
   .hero-content h1{
@@ -688,6 +753,9 @@ color:WHITE;
     font-size:45px !important;
   }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   .col99 div p{
     font-size: 16px !important;
     width:180px !important;
@@ -706,10 +774,13 @@ color:WHITE;
   font-weight: 600;
 }
 
+<<<<<<< HEAD
+=======
 =======
   /* div.hero */
 }
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 
 .audiodata{
 visibility: hidden;
@@ -721,6 +792,9 @@ visibility: hidden;
 margin-top: 30px;
   color: #500f17;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
 }
 .spandata{
   color: orange !important;
@@ -728,7 +802,11 @@ margin-top: 30px;
 .tasty{
   color: orange !important;
   font-size:86px !important;
+<<<<<<< HEAD
+} 
+=======
 } 
 =======
 }
 >>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
