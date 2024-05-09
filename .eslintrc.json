@@ -1,6 +1,22 @@
+
+// {
+//   "extends": "next/core-web-vitals"
+// }
 {
   "extends": "next/core-web-vitals",
+<<<<<<< HEAD
   "rules":{
    "react/no-unescaped-entities":"off"
+=======
+<<<<<<< HEAD
+  "rules": {
+    "next/no-css-tags": "off", // Example of disabling a rule
+    // Add more rules to disable as needed
+=======
+  "rules":{
+    "react/no-unescaped-entities":0
+>>>>>>> 2a68ca256f405cde451095103dfeb3ac86eb523a
+>>>>>>> 6cdc792832a6d666b2243afa338315b33651f7bd
   }
 }
+ 
